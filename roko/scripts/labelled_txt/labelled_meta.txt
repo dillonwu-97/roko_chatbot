@@ -1,0 +1,61 @@
+digraph G {
+node [style = filled, color = orange] {
+LS2a->mU0[label=" thank you for telling me \n about this game! in general \n"]
+LS3aa->mU0[label=" thank you for telling me \n about this game! what do \n you see for the future \n of gaming?"]
+}
+node [style = filled, color = mediumpurple1] {
+fU4a->mS0[label=" [{#ONT(genreOpinions}]"]
+fU4b->mS0[label=" [{#ONT(genreOpinions}]"]
+}
+node [style = filled, color = cyan] {
+gU0->mS0[label="error"]
+g5b->mU0[label=" i will brainstorm more games \n for you! in the mean \n time"]
+g5a->mU0[label=" i look forward to talking \n to you about the  \n $specG  franchise in the \n future! in the mean time"]
+}
+node [style = filled, color = lawngreen] {
+hU0[color = lawngreen]
+}
+node [style = filled, color = orchid1] {
+mS0->mU0[label=" video games have so much to offer from visual storylines \n to character arcs and from challenges to mediums of social \n interaction. what do you see for the future of gaming?"]
+mU0->mS1a[label=" [#ONT(metaArt]"]
+mU0->mS1b[label=" [#ONT(metaVR]"]
+mU0->mS1c[label=" [#ONT(metaBus]"]
+mU0->mS1d[label="error"]
+mS1a->mU1a[label=" video game graphics are getting \n more advanced"]
+mU1a->mS1aa[label=" [#ONT(positive]#yes/like"]
+mU1a->mS1ab[label=" [#ONT(negative]#no/dislike"]
+mU1a->mS1ac[label="error"]
+mS1aa->mU1d[label=" I think so too! unfortunately \n"]
+mS1ab->mU1d[label=" I entirely disagree! unfortunately"]
+mS1ac->mU1d[label=" the artistic merit of video games is often questioned. why \n do you think people view \n video games as a negative pastime?"]
+mS1b->mU1b[label=" virtual reality is gaining traction \n right now! what do you \n think about virtual reality?"]
+mU1b->mS1ba[label=" [#ONT(positive]#yes/like"]
+mU1b->mS1bb[label=" [#ONT(negative]#no/dislike"]
+mU1b->mS1bb[label="error"]
+mS1ba->mU1c[label=" virtual reality offers a beautiful  addition to the video gaming world. \n unfortunately there is a large stigma around video \n games. why do you think people feel this way?"]
+mS1bb->mU1d[label=" virtual reality is a growing \n presence in gaming for sure. \n unfortunately there is a large \n stigma around video games. why \n do you think people feel this way?"]
+mS1c->mU1c[label=" the video game industry has \n grown tremendously in the past \n decade"]
+mU1c->mS1ca[label=" [$company=#ONT(metaComp]#catch from ontology"]
+mU1c->mS1cc[label="error"]
+mS1ca->mU1a[label=" [!#metaComp]"]
+mS1cc->mS1a[label=" it is hard to say what the industry will look \n like in the near future considering it grew a lot. \n what do you think about video games as an art form?"]
+mS1d->mU1d[label=" there seems to be a \n lot of stigma surrounding video \n games. what do you think \n are the reasons people look \n down on playing video games?"]
+mU1d->mS1da[label=" [#ONT(metaEntertainment]# entertainmentMeta"]
+mU1d->mS1db[label=" [#ONT(metaHealth] #healthMeta"]
+mU1d->mS1db[label="error"]
+mS1da->mU2d[label=" thats true theyre a source \n of entertainment"]
+mU2d->mS2da[label=" [#ONT(positive]#yes"]
+mU2d->mS2db[label=" [#ONT(negative]#no"]
+mU2d->mS2dc[label="error"]
+mS2da->hU0[label=" i agree! however it is \n important to practice healthy gaming! \n what are ways do you \n think people can practice healthy \n gaming?"]
+mS2db->hU0[label=" i disagree. video games can \n foster a lot of great \n skills similar to sports. in \n both sports and video games \n however"]
+mS2dc->hU0[label=" regardless of whether you play \n sports or video games"]
+mS1db->hU0[label=" video games are often seen as unhealthy-it can lead to \n a lot of bad habits that all culminate to not taking care of yourself. what \n are ways do you think people can practice healthy gaming?"]
+mS0[color = orchid1]
+mU0[color = orchid1]
+}
+node [style = filled, color = yellow] {
+}
+
+
+}

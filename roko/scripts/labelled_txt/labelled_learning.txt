@@ -1,0 +1,30 @@
+digraph G {
+node [style = filled, color = orange] {
+LU1a->LS1a[label=" [<$learned_genre=#ONT(genre"]
+LU1a->LS1b[label=" [$genre=#ONT(genreSpec]"]
+LU1a->LS2aa[label="error"]
+LS2aa->LU2a[label=" i never knew that was \n a genre. is that game \n single-player or multiplayer?"]
+LS1a->LU2a[label=" $learned_genre eh ? is it \n single-player or multiplayer?"]
+LU2a->LS2a[label=" r$learned_type=[{#ONT(alone"]
+LU2a->LS3aa[label="error"]
+LS2a->mU0[label=" thank you for telling me \n about this game! in general \n"]
+LS3aa->mU0[label=" thank you for telling me \n about this game! what do \n you see for the future \n of gaming?"]
+LS1b->fU5a[label=" [!#genre_pivot_learning]"]
+}
+node [style = filled, color = mediumpurple1] {
+fU1d->LS1a[label=" [<$learned_genre=#ONT(genre"]
+fU1d->LS1b[label=" [$genre=#ONT(genreSpec]"]
+fS2db->LU1a[label=" ive never heard of that \n game before. what is the \n genre?"]
+fU5a[color = mediumpurple1]
+}
+node [style = filled, color = cyan] {
+}
+node [style = filled, color = lawngreen] {
+}
+node [style = filled, color = orchid1] {
+mU0[color=orchid1]
+}
+node [style = filled, color = yellow] {
+}
+
+}

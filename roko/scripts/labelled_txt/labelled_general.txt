@@ -1,0 +1,69 @@
+digraph G {
+node [style = filled, color = orange] {
+}
+node [style = filled, color = mediumpurple1] {
+fS1b[color=mediumpurple1]
+fS1d[color=mediumpurple1]
+fS1aa[color=mediumpurple1]
+fU0[color=mediumpurple1]
+}
+node [style = filled, color = cyan] {
+gU0->gS1d[label=" [$word=#ONT(dislike"]
+gU0->gS1a[label=" [#ONT(positive]"]
+gU0->gS1b[label=" {[#ONT(negative"]
+gU0->gS1c[label=" [[$word=#ONT(like"]
+gU0->fS1b[label=" general"]
+gU0->fS1d[label=" [{$specG=#ONT(specificGame}]"]
+gU0->mS0[label="error"]
+gS1b->gU1aa[label=" video games are great"]
+gS1c->gU1ac[label=" why do you $word #like_macro \n"]
+gS1d->gU1ad[label=" why do you $word #dislike_macro \n"]
+gU1ac->fS1d[label=" [{$specG=#ONT(specificGame}]"]
+gU1ac->gS2d[label=" [-{$specG=#ONT(specificGame} $explain=/.*/] # continues from \n why do you like"]
+gU1ad->gS2d[label=" $explain=/.*/ # continues from why \n do you dislike"]
+gU2d->gS1b[label=" /.*/"]
+gU1aa->gS2a[label="[{$response=#ONT(alone}] # alone"]
+gU1aa->gS2b[label=" [{$response=#ONT(team}] # with others"]
+gU1aa->gS2c[label="error"]
+gS2a->gU2a[label=" there are a lot of \n fun games for people that \n are more introverted. i highly \n recommend the $specG=pokemon franchise! would \n you be interested in them? \n"]
+gS2b->gU2b[label=" thats awesome! being with people \n is great and games are \n a great way to be \n more sociable. i highly recommend \n the $specG=mario kart games! would \n you be interested in them? \n"]
+gU2a->g5a[label=" [{#ONT(positive}]"]
+gU2b->g5a[label=" [{#ONT(positive}]"]
+gU2a->fS1aa[label=" <{what}>"]
+gU2b->fS1aa[label=" <{what}>"]
+gU2b->g5b[label="error"]
+gU2a->g5b[label="error"]
+gU2a->g5b[label=" [{#ONT(negative}]"]
+gU2b->g5b[label=" [{#ONT(negative}]"]
+g5b->mU0[label=" i will brainstorm more games \n for you! in the mean \n time"]
+g5a->mU0[label=" i look forward to talking \n to you about the  \n $specG  franchise in the \n future! in the mean time \n"]
+g5c->fU0[label=" i look forward to talking \n to you about the  \n $specG  franchise in the \n future! now tell me about \n about some of the games \n you like!"]
+gS2c->gU2c[label=" there are many great stories \n in games! are there maybe \n particular types of stories you \n enjoy like horror or adventure \n stories?"]
+gS2d->gU2c[label=" [!#explain_response are there maybe particular \n types of stories you enjoy \n like horror or adventure stories?] \n"]
+gU2c->gS3aa[label=" [{$genre=#ONT(genre}]"]
+gU2c->gS3ab[label=" dontknow"]
+gS3ab->gU3b[label=" it doesnt seem like you \n know much. tell me what \n you know about video games \n"]
+gU3b->gS3b[label=" /.*/"]
+gS3b->endGen[label=" i have nothing to say \n to you. goodbye"]
+gU2c->sS1aA[label="error"]
+gS3aa->gU3a[label=" [!#GENRE_OPINION]"]
+gU3a->gS4b[label=" affirm"]
+gS4b->gU4a[label=" [!#GENRE_RECOMMENDER]"]
+gU4a->fS1d[label=" affirm"]
+gU3a->gS4a[label=" [{#ONT(question}]"]
+gU4a->gS3c[label="error"]
+gU3a->gS3c[label="error"]
+gS3c->endGen[label=" thanks for the conversation! goodbye. \n"]
+gS1a->fU0[label=" I like to game in \n my free time"]
+}
+node [style = filled, color = lawngreen] {
+}
+node [style = filled, color = orchid1] {
+mS0[color=orchid1]
+mU0[color=orchid1]
+}
+node [style = filled, color = yellow] {
+sS1aA[color=yellow]
+}
+
+}

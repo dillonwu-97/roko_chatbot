@@ -1,0 +1,25 @@
+node [style = filled, color = orange] {
+LU1a->LS1a
+LU1a->LS1b
+LU1a->LS2aa
+LS2aa->LU2a
+LS1a->LU2a
+LU2a->LS2a
+LU2a->LS3aa
+LS2a->mU0
+LS3aa->mU0
+LS1b->fU5a
+}
+node [style = filled, color = red] {
+fU1d->LS1a
+fU1d->LS1b
+fS2db->LU1a
+}
+node [style = filled, color = blue] {
+}
+node [style = filled, color = green] {
+}
+node [style = filled, color = magenta] {
+}
+node [style = filled, color = yellow] {
+}

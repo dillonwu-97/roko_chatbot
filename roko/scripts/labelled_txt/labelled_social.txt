@@ -1,0 +1,34 @@
+digraph G {
+node [style = filled, color = orange] {
+}
+node [style = filled, color = mediumpurple1] {
+fU2a->sS1a[label=" <[$genre=#ONT(genre]"]
+fU2a->sS1aA[label="error"]
+}
+node [style = filled, color = cyan] {
+gU2c->sS1aA[label="error"]
+}
+node [style = filled, color = lawngreen] {
+hU0[color= lawngreen]
+hS0[color= lawngreen]
+}
+node [style = filled, color = orchid1] {
+}
+node [style = filled, color = yellow] {
+sS1a [color= yellow]
+sS1aA[color= yellow]
+sS1a->sU1a[label=" $genre games are pretty great \n for building social skills and \n cognitive development"]
+sS1aA->sU1a[label=" games can discuss a wide \n range of stories"]
+sU1a->sS2a[label=" [{#ONT(agree"]
+sU1a->sS2b[label=" [{#ONT(disagree"]
+sU1a->hS0[label=" [{#ONT(metaHealth"]
+sU1a->hS0[label="error"]
+sS2a->sU2a[label=" can you expand on your \n perspective?"]
+sS2b->sU2b[label=" can you elaborate on what \n you mean by that?"]
+sU2a->sS3a[label=" [{$pos_word=#ONT(positive_con}]"]
+sU2b->sS3b[label=" [{$neg_word=#ONT(negative_con}]"]
+sU2b->hS0[label="error"]
+sS3a->hU0[label=" im glad you think games \n help people be $pos_word ! \n but its also important to \n stay healthy while gaming. how \n should people practice healthy gaming? \n"]
+sS3b->hU0[label=" i agree that sometimes games \n can make people  $neg_word \n . health is another issue. \n how do you think people \n can practice healthy gaming?"]
+}
+}

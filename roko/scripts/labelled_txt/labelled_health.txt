@@ -1,0 +1,40 @@
+node [style = filled, color = orange] {
+}
+node [style = filled, color = mediumpurple1] {
+}
+node [style = filled, color = cyan] {
+}
+node [style = filled, color = lawngreen] {
+hS0->hU0[label=" thats an interesting opinion! i \n like to stay healthy as \n i game. what are ways \n you think people can practice \n healthy gaming? #Could open the \n conversation for the user to \n either continue this conversation on \n healthy gaming or go to \n another conversation. Doesnt come off \n as preachy"]
+hU0->hS1a[label=" [{how"]
+hU0->hS1b[label=" [{what"]
+hU0->hS1c[label=" [#ONT(healthExcersise] #excersise"]
+hU0->hS1d[label=" [#ONT(healthBreaks] #breaks"]
+hU0->hS1a[label="error"]
+hS1a->hU1a[label=" i practice healthy gaming by \n taking breaks and going on \n walks! do you have any \n other ideas about what i \n can do? #Could open the \n conversation for the user to \n either continue this conversation on \n healthy gaming or go to \n another conversation. Doesnt come off \n as preachy"]
+hU1a->hS1c[label=" [#ONT(healthExcersise] #excersise"]
+hU1a->hS1d[label=" [#ONT(healthBreaks] #breaks"]
+hU1a->hS1c[label="error"]
+hS1b->hU1b[label=" i think healthy gaming is \n important because before"]
+hU1b->hS1c[label=" [#ONT(healthExcersise] #excersise"]
+hU1b->hS1d[label=" [#ONT(healthBreaks] #breaks"]
+hU1b->hS1c[label="error"]
+hS1c->hU1c[label=" exercise can be a great \n way to stay healthy! thank \n you helping me brainstorm!"]
+hU1c->hS2END[label="error"]
+hS1d->hU1d[label=" taking breaks can be a \n great way to stay healthy! \n thank you helping me brainstorm! \n"]
+hU1d->hS2END[label="error"]
+hS2END->hS2END[label=" thank you for talking to \n me about video games! hope \n to talk to you again \n soon!"]
+}
+node [style = filled, color = orchid1] {
+mS2da->hU0[label=" i agree! however it is \n important to practice healthy gaming! \n what are ways do you \n think people can practice healthy \n gaming?"]
+mS2db->hU0[label=" i disagree. video games can \n foster a lot of great \n skills similar to sports. in \n both sports and video games \n however"]
+mS2dc->hU0[label=" regardless of whether you play \n sports or video games"]
+mS1db->hU0[label=" video games are often seen \n as unhealthy-it can lead to \n a lot of bad habits \n that all culminate to not \n taking care of yourself. what \n are ways do you think \n people can practice healthy gaming? \n"]
+}
+node [style = filled, color = yellow] {
+sU1a->hS0[label=" [{#ONT(metaHealth"]
+sU1a->hS0[label="error"]
+sU2b->hS0[label="error"]
+sS3a->hU0[label=" im glad you think games \n help people be $pos_word ! \n but its also important to \n stay healthy while gaming. how \n should people practice healthy gaming? \n"]
+sS3b->hU0[label=" i agree that sometimes games \n can make people  $neg_word \n . health is another issue. \n how do you think people \n can practice healthy gaming?"]
+}

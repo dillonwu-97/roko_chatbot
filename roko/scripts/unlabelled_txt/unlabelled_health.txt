@@ -1,0 +1,40 @@
+node [style = filled, color = orange] {
+}
+node [style = filled, color = red] {
+}
+node [style = filled, color = blue] {
+}
+node [style = filled, color = green] {
+hS0->hU0
+hU0->hS1a
+hU0->hS1b
+hU0->hS1c
+hU0->hS1d
+hU0->hS1a
+hS1a->hU1a
+hU1a->hS1c
+hU1a->hS1d
+hU1a->hS1c
+hS1b->hU1b
+hU1b->hS1c
+hU1b->hS1d
+hU1b->hS1c
+hS1c->hU1c
+hU1c->hS2END
+hS1d->hU1d
+hU1d->hS2END
+hS2END->hS2END
+}
+node [style = filled, color = magenta] {
+mS2da->hU0
+mS2db->hU0
+mS2dc->hU0
+mS1db->hU0
+}
+node [style = filled, color = yellow] {
+sU1a->hS0
+sU1a->hS0
+sU2b->hS0
+sS3a->hU0
+sS3b->hU0
+}

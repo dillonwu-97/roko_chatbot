@@ -1,0 +1,61 @@
+node [style = filled, color = orange] {
+LS2a->mU0
+LS3aa->mU0
+}
+node [style = filled, color = red] {
+fU4a->mS0
+fU4b->mS0
+}
+node [style = filled, color = blue] {
+gU0->mS0
+g5b->mU0
+g5a->mU0
+}
+node [style = filled, color = green] {
+}
+node [style = filled, color = magenta] {
+mS0->mU0
+mU0->mS1a
+mU0->mS1b
+mU0->mS1c
+mU0->mS1d
+mS1a->mU1a
+mU1a->mS1aa
+mU1a->mS1ab
+mU1a->mS1ac
+mS1aa->fS1a
+mS1aa->mU1d
+mS1ab->fS1a
+mS1ab->mU1d
+mS1ac->fS1a
+mS1ac->mU1d
+mS1b->mU1b
+mU1b->mS1ba
+mU1b->mS1bb
+mU1b->mS1bb
+mS1ba->fS1a
+mS1ba->mU1c
+mS1bb->fS1a
+mS1bb->mU1d
+mS1c->mU1c
+mU1c->mS1ca
+mU1c->mS1cc
+mS1ca->fS1a
+mS1ca->mU1a
+mS1cc->fS1a
+mS1cc->mS1a
+mS1d->mU1d
+mU1d->mS1da
+mU1d->mS1db
+mU1d->mS1db
+mS1da->mU2d
+mU2d->mS2da
+mU2d->mS2db
+mU2d->mS2dc
+mS2da->hU0
+mS2db->hU0
+mS2dc->hU0
+mS1db->hU0
+}
+node [style = filled, color = yellow] {
+}

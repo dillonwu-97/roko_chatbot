@@ -1,0 +1,28 @@
+node [style = filled, color = orange] {
+}
+node [style = filled, color = red] {
+fU2a->sS1a
+fU2a->sS1aA
+}
+node [style = filled, color = blue] {
+gU2c->sS1aA
+}
+node [style = filled, color = green] {
+}
+node [style = filled, color = magenta] {
+}
+node [style = filled, color = yellow] {
+sS1a->sU1a
+sS1aA->sU1a
+sU1a->sS2a
+sU1a->sS2b
+sU1a->hS0
+sU1a->hS0
+sS2a->sU2a
+sS2b->sU2b
+sU2a->sS3a
+sU2b->sS3b
+sU2b->hS0
+sS3a->hU0
+sS3b->hU0
+}

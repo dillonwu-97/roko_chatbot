@@ -1,0 +1,59 @@
+node [style = filled, color = orange] {
+}
+node [style = filled, color = red] {
+}
+node [style = filled, color = blue] {
+gU0->gS1d
+gU0->gS1a
+gU0->gS1b
+gU0->gS1c
+gU0->fS1b
+gU0->fS1d
+gU0->mS0
+gS1b->gU1aa
+gS1c->gU1ac
+gS1d->gU1ad
+gU1ac->fS1d
+gU1ac->gS2d
+gU1ad->gS2d
+gU2d->gS1b
+gU1aa->gS2a
+gU1aa->gS2b
+gU1aa->gS2c
+gS2a->gU2a
+gS2b->gU2b
+gU2a->g5a
+gU2b->g5a
+gU2a->fS1aa
+gU2b->fS1aa
+gU2b->g5b
+gU2a->g5b
+gU2a->g5b
+gU2b->g5b
+g5b->mU0
+g5a->mU0
+g5c->fU0
+gS2c->gU2c
+gS2d->gU2c
+gU2c->gS3aa
+gU2c->gS3ab
+gS3ab->gU3b
+gU3b->gS3b
+gS3b->endGen
+gU2c->sS1aA
+gS3aa->gU3a
+gU3a->gS4b
+gS4b->gU4a
+gU4a->fS1d
+gU3a->gS4a
+gU4a->gS3c
+gU3a->gS3c
+gS3c->endGen
+gS1a->fU0
+}
+node [style = filled, color = green] {
+}
+node [style = filled, color = magenta] {
+}
+node [style = filled, color = yellow] {
+}
