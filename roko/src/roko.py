@@ -644,4 +644,4 @@ df.add_system_transition(State.endSpecGame, State.END, "Future Spec Games Module
 df.add_system_transition(State.endGen, State.END, "Future General Module") #this exists
 
 if __name__ == '__main__':
-    df.run(debugging=True)
+    df.run(debugging=False)
