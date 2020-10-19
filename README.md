@@ -7,5 +7,6 @@ This is an open-domain chatbot that talks to users about video games.
 ![](/roko/scripts/video_demo/roko_demo.gif)
 
 ## How to Run
-python roko.py
+python roko.py  
+You can also start a jupyter notebook and run the first cell
 
